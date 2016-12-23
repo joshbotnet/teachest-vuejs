@@ -9,7 +9,7 @@ Vue.material.registerTheme({
   default: {
     primary: {
       color: 'deep-purple',
-      hue: 'A200'
+      hue: 'A400'
     },
     accent: {
       color: 'pink',
@@ -17,11 +17,7 @@ Vue.material.registerTheme({
     },
     warn: {
       color: 'red',
-      hue: 'A200'
-    },
-    background: {
-      color: 'white',
-      hue: 'A200'
+      hue: 'A400'
     }
   },
   dark: {
@@ -35,10 +31,6 @@ Vue.material.registerTheme({
     },
     warn: {
       color: 'red',
-      hue: 'A200'
-    },
-    background: {
-      color: 'white',
       hue: 'A200'
     }
   },
@@ -54,10 +46,8 @@ Vue.material.registerTheme({
     warn: {
       color: 'red',
       hue: 'A200'
-    },
-    background: {
-      color: 'white',
-      hue: 'A200'
     }
   }
 })
+
+Vue.material.setCurrentTheme('default')

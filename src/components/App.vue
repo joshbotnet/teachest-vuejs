@@ -69,6 +69,10 @@
         </md-list-item>
 
         <md-list-item @click="$refs.sidenav.toggle()">
+          <router-link :to="{ name: 'adduser' }"><md-icon>start</md-icon> <span>Add User</span></router-link>
+        </md-list-item>
+
+        <md-list-item @click="$refs.sidenav.toggle()">
           <md-icon>insert_drive_file</md-icon> <span>My files</span>
         </md-list-item>
 
@@ -138,13 +142,8 @@ ul li span
     margin: 0
 
 #app
-  font-family: Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  font-family: sans-serif
-  font-size: 15px
-  line-height: 1.5
-  color: #333
   display: flex
   flex-flow: column
   position: relative
