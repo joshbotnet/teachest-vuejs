@@ -2,11 +2,11 @@
   <form novalidate @submit.stop.prevent="submit">
     <md-input-container>
       <label for="firstName">First Name</label>
-      <md-input v-model="firstName" name="firstName" id="firstName" placeholder="Jane"></md-input>
+      <md-input v-model="firstName" name="firstName" id="firstName" placeholder="First Name"></md-input>
     </md-input-container>
     <md-input-container>
       <label for="lastName">Last Name</label>
-      <md-input v-model="lastName" name="lastName" id="lastName" placeholder="Citizen"></md-input>
+      <md-input v-model="lastName" name="lastName" id="lastName" placeholder="Last Name"></md-input>
     </md-input-container>
     <md-button @click="createUser" class="md-raised" md-theme="default">Create</md-button>
   </form>
@@ -46,6 +46,9 @@ export default {
         }
       }).then(data => {
         console.log('Created user')
+      }).catch((error) => {
+        // Error
+        console.error(error)
       })
     }
   }
